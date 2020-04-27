@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    csv (3.1.2)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     rack (2.2.2)
@@ -20,8 +21,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  csv
   shotgun
   sinatra
+
+RUBY VERSION
+   ruby 2.5.1p57
 
 BUNDLED WITH
    2.1.4

@@ -1,0 +1,32 @@
+
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>PAGE POTIN</h1>
+    <h2>voici la page du potin n°<%= params["id"] %></h2>
+
+<h3>Son auteur : <%= gossip[0] %></h3>
+<h3>Le contenu du potin :  : <%= gossip[1] %></h3>
+<a href="/gossips/<%= params["id"] %>/edit/">Lien pour editer le potin <%= params["id"] %></a>
+
+    <form action='/gossip/<%= params["id"] %>' method='POST'>
+      Commentaire :  <input type='text' name='gossip_comment'/><br/>
+      <input type='submit'/>
+    </form>
+
+<br><br><br>
+<p>Liste des commentaires :  </p>
+<% gossip.each_with_index do |gossip, i| %>
+        <p>
+          <% if i>1%>
+          <%= gossip %>
+          <% end %>
+        </p>
+      <% end %>
+<br><br><br>
+
+<a href="/">Lien pour revenir à la page des potins</a>
+  </body>
+</html>

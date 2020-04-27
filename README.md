@@ -1,5 +1,9 @@
 Bienvenue sur notre Gossip Project en ruby avec SINATRA
 
+Pour le voir cloner le git ou ouvrez la page : 
+
+https://gossip-project-mba.herokuapp.com/
+
 
 Commencer par un bundle install 
 
